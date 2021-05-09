@@ -46,4 +46,12 @@ public class Bicykle {
         return String.format("Moj rower porusza sie z predkoscia %d z kandencja %d i na biegu %d", speed, cadence, gear);
     }
 
+    @Override
+    public String toString() {
+        return "Bicykle{" +
+                "speed=" + speed +
+                ", cadence=" + cadence +
+                ", gear=" + gear +
+                '}';
+    }
 }
