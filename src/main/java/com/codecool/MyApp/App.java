@@ -11,6 +11,13 @@ public class App
         Bicykle bicykle = new Bicykle(25, 85, 4);
         Bicykle[] arrayOfBicykles = new Bicykle[10];
 
+        int[] arrayOfInts = new int[10];
+
+
+        for(int i = 0 ; i < arrayOfInts.length; ++i){
+            System.out.println(arrayOfInts[i]);
+        }
+
         for(int i = 0 ; i < 10; ++i){
             arrayOfBicykles[i] = new Bicykle(20, 80, 3);
         }
