@@ -16,5 +16,7 @@ public class App
         bicykle.setCadence(bicykle.getCadence()+5);
         System.out.println(bicykle.print());
         System.out.println(bicykle.alternativePrint());
+
+        System.out.println(Bicykle.numberOfBicykles);
     }
 }

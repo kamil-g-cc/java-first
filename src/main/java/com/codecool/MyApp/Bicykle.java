@@ -5,10 +5,13 @@ public class Bicykle {
     private int cadence;
     private int gear;
 
+    public static int numberOfBicykles = 0;
+
     public Bicykle(int initialSpeed, int initialCadence, int initialGear){
         speed = initialSpeed;
         cadence = initialCadence;
         gear = initialGear;
+        numberOfBicykles++;
     }
 
     public int getSpeed() {
