@@ -1,5 +1,7 @@
 package com.codecool.MyApp;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -8,23 +10,27 @@ public class App
 {
     public static void main( String[] args )
     {
-        Bicykle bicykle = new Bicykle(25, 85, 4);
-        Bicykle[] arrayOfBicykles = new Bicykle[10];
+        System.out.println("Wybierz pozycje z menu");
+        System.out.println("1. start");
+        System.out.println("2. zakoncz");
 
-        int[] arrayOfInts = new int[10];
-
-
-        for(int i = 0 ; i < arrayOfInts.length; ++i){
-            System.out.println(arrayOfInts[i]);
+        Scanner scanner = new Scanner(System.in);
+        //int choice = scanner.nextInt();
+        String response = scanner.nextLine();
+        int choice = 0;
+        System.out.println(response);
+        if(response.equals("1")){
+            choice = 1;
+        } else if(response.equals("2")){
+            choice = 2;
+        } else {
+            System.out.println("Nieprawidlowy wybor");
         }
 
-        for(int i = 0 ; i < 10; ++i){
-            arrayOfBicykles[i] = new Bicykle(20, 80, 3);
+        if(choice == 1){
+            System.out.println("wybrano start");
+        } else if(choice==2){
+            System.out.println("wyborano koniec");
         }
-        for(Bicykle b : arrayOfBicykles){
-            System.out.println(b.getGear());
-        }
-
-        System.out.println(bicykle.getGear());
     }
 }
